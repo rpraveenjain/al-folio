@@ -1,12 +1,61 @@
 /*******************************************************************************
  * Styles for the base elements of the theme.
  ******************************************************************************/
-
-// Typography
-
+/*
+// Typography - default
 p, h1, h2, h3, h4, h5, h6, em, div, span, strong {
   color: var(--global-text-color);
+  font-size: 20px;
 }
+*/
+
+// Type 1
+h1, h2, h3, h4, h5, h6 {
+  color: var(--global-text-color);
+  font-weight: bold;
+}
+
+em, div, span, strong {
+  color: var(--global-text-color);
+}
+
+h3st {
+  color: var(--global-distill-app-color);
+  font-weight: bold;
+  font-size: 28px;
+}
+
+p {
+  color: var(--global-text-color-light);
+  font-size: 20px;
+  font-family: calibri;
+  line-height: 1.5;
+}
+
+pi {
+  color: var(--global-text-color-light);
+  font-size: 16px;
+  font-family: Arial, sans-serif;
+  font-style: italic;
+}
+
+//Type 2: A particular style of writing
+/*
+p {
+  color: var(--global-text-color-light);
+  font-family: verdana, sans-serif;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 1.8;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  color: var(--global-text-color);
+  font-family: Arial, sans-serif;
+  font-weight: bold;
+}
+*/
+
 
 a, table.table a {
   color: var(--global-theme-color);
@@ -204,7 +253,7 @@ blockquote {
 .social {
   text-align: center;
   .contact-icons {
-    font-size: 4rem;
+    font-size: 2.5rem;
     a {
       i::before {
         color: var(--global-text-color);
@@ -269,14 +318,15 @@ footer.sticky-bottom {
   li {
     border-bottom: 1px solid $grey-color-light;
     list-style: none;
-    padding-top: 2rem;
-    padding-bottom: 2rem;
+    padding-top: 0.3rem; // default 2rem
+    padding-bottom: 0.3rem; // default 2rem
     .post-meta {
       color: var(--global-text-color-light);
       font-size: 0.875rem;
       margin-bottom: 0;
     }
     a {
+      font-size: 26px; // default remvoe this line
       color: var(--global-text-color);
       text-decoration: none;
       &:hover {
